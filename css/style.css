@@ -1,0 +1,1168 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,900&display=swap');
+ 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+/* overflow-x: hidden; */
+}
+/* ===========================HOMEPAGE STYLING=============================== */
+.home {
+    /* background: url(../images/v569_749.png); */
+    height: 100vh;
+}
+.home-container {
+    position: relative;
+    /* width: 98vw; */
+}
+.navbar {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+     height: 100px;
+    padding-left: 37px; 
+    padding-right: 37px;
+     padding-top: 19px; padding-bottom: 19px; 
+     /* background-color: rgba(0, 0, 0, 0.30);  */
+     border-radius: 10px; display:flex; 
+     flex-direction: row; 
+     align-items: center; 
+     justify-content: space-between;
+}
+.navbar .logo {
+    width: 3rem;
+}
+.logo img {
+    width: 100%;
+}
+.navbar-list ul {
+display: flex;
+gap: 1rem;
+}
+.navbar-list ul li a {
+    font-size: 15px; 
+    line-height: 100%; 
+}
+.toggle {
+    display: none;
+}
+.toggle .fa-bars {
+color: #F3628E;
+font-size: 1.5rem;
+cursor: pointer;
+}
+.fa-times {
+    color: #F3628E;
+    font-size: 1.5rem;
+    cursor: pointer;  
+}
+.search-btns {
+    display: flex;
+  gap: 2.5rem;
+}
+.search-btns .nav-search {
+    width: 170px; height: 38px; padding: 10px 84x 9px 16px;
+     background-color: rgba(217, 217, 217, 0.48); 
+    border-radius: 10px; display: inline-flex; flex-direction: row; 
+    align-items: center; justify-content: flex-start;
+}
+.search-btns .nav-search .fa-search{
+  padding-left: 10px;
+  padding-top: 10px;
+  background-color: rgba(217, 217, 217, 0.48); 
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  color: #fff;
+}
+.search-btns .nav-search input{
+    background-color: rgba(217, 217, 217, 0.48); 
+   padding-left: 5px;
+   width: 100%;
+   height: 100%; border-radius:0 10px 10px 0;
+}
+.search-btns .nav-search input::placeholder{
+  color: #fff;
+  font-size: 1rem;
+}
+.search-btns .nav-btns {
+    width: 240px; height: 36.10px; display: flex; 
+    flex-direction: row; align-items: center; justify-content: flex-end;
+    gap: .8rem;
+}
+.search-btns .nav-btns .donate-btn  {
+    width: 115.10px;
+     height: 36.10px; 
+     padding-left: 17px; padding-right: 17px; padding-top: 13px;
+      padding-bottom: 13px; background-color: rgba(243, 98, 142, 1);
+     border-radius: 5px; display: flex; flex-direction: row; align-items: center; justify-content: center;
+}
+.search-btns .nav-btns .donate-btn a {
+    font-size: 13px; line-height: 100%; color: white;
+}
+.search-btns .nav-btns .contact-btn  {
+    background-color: transparent;
+    width: 115.10px; 
+    height: 36.10px; 
+    padding-left: 17px; 
+    padding-right: 17px; 
+    padding-top: 13px; 
+    padding-bottom: 13px; 
+    border-radius: 5px; 
+    border-style: solid; 
+    border-width: 1px;
+     border-style: solid; 
+     border-color: rgba(243, 98, 142, 1);
+    display: flex; flex-direction: row; align-items: center; justify-content: center;
+}
+.search-btns .nav-btns .contact-btn a {
+    font-size: 13px; font-weight: 600; line-height: 100%; color: #fff;
+}
+.home-content-details {
+    width: 786px; height: 390.71px; padding-top: 18px; padding-bottom: 52px; padding-left: 26px;
+     padding-right: 197px; display: inline-flex; flex-direction: column; align-items: flex-start; justify-content: flex-start;
+}
+.home-content-details h3 {
+    width: 418px; font-size: 40px; font-weight: 700; line-height: 143.70%; margin-bottom: 2rem;
+}
+.home-content-details h3 span {
+    color: #f3628e;
+}
+.home-content-details p {
+    width: 563px; font-size: 18px; line-height: 128.50%; margin-bottom: 1.5rem;
+}
+.home-content-details p span {
+    color: #f3628e;
+}
+.home-content-details .btn {
+    padding-left: 61px; 
+    padding-right: 61px; 
+    padding-top: 15px;
+     padding-bottom: 15px;
+    background-color: rgba(243, 98, 142, 1);
+    border-radius: 5px; display: inline-flex;
+    flex-direction: row; align-items: flex-start;
+    justify-content: flex-start;
+}
+.home-content-details .btn a {
+font-size: 20px;
+ font-weight: 600;
+  line-height: 100%;
+   color: white;
+}
+
+.homepage-image {
+    position: absolute;right: 0;top: 0;
+    z-index: -99;
+    height: 95vh;
+}
+.homepage-image img {
+    height: 100%;
+    width: 52vw;
+    min-width:15rem ;
+    border-top-left-radius: 141px;
+}
+.project-volunteer-donation {
+     /* margin-left: 33.5rem;
+    width: 812px; padding-left: 81px; padding-right: 81px; padding-top: 34px; padding-bottom: 34px; background-color: rgba(0, 0, 0, 0.30);
+     display: flex; flex-direction: row; align-items: center; justify-content: flex-start;gap: 2rem; z-index: 999;margin-top: 4rem; 
+     border-top-left-radius: 41px; gap: 4rem; */
+     z-index: 99;
+     display: flex;
+     position: absolute;
+}
+.project-volunteer-donation .projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.project-volunteer-donation .projects P, .project-volunteer-donation .projects h2{
+   color: #000;
+   font-size: 1.6rem;
+}
+
+.about {
+    margin: 3rem 0;
+}
+.about .title, 
+.project .title, .events .title, 
+.testimonials .title {
+    margin: 0 auto;
+    width: 350px; height: 66px; 
+    display: flex; flex-direction: column; 
+    align-items: center; justify-content: center;
+}
+.about .title h1, 
+.project .title h1, 
+.events .title h1,
+.testimonials .title h1{
+    font-size: 36px; font-weight: 700; line-height: 100%; color: black;text-align: center;
+}
+.about .title img, .project .title img,  .events .title img {
+    width: 296px; height: 17px; border-radius: 8px; margin-bottom: 3rem;
+}
+.about-details {
+ display: flex;
+      align-items: center; justify-content:center; gap: 6rem;flex-wrap: wrap;
+}
+.about-details .about-details-content h1 {
+    font-size: 32px; font-weight: 700; line-height: 100%;
+     color: black; margin-bottom: 1rem;text-align: center;
+}
+.about-details .about-details-content  p {
+    width: 516px;
+     font-size: 18px; letter-spacing: 0.18px; line-height: 28px; color: black;
+}
+.about-details-img {
+    width: 25vw;
+    min-width: 17rem;
+    margin-top: 2rem;
+}
+.about-details-img img {
+    width: 100%;
+    height: 25rem;
+}
+.about-details .btn {
+    width: 162px; height: 47px; padding-left: 32px;
+     padding-right: 32px; padding-top: 23px; padding-bottom: 23px;
+      background-color: rgba(243, 98, 142, 1); border-radius: 5px;
+     display: flex; flex-direction: row; align-items: center; justify-content: center;
+    margin: 1.5rem auto;
+}
+.about-details .btn a{
+    font-size: 18px; font-weight: 600; line-height: 100%; color: white;
+}
+
+.project-details {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.project-details .project-details-info {
+    position: relative;
+    width: 375px;
+     height: 354px; 
+}
+.project-details .project-details-info img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+}
+.project-details .project-details-info-text {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+.project-details .project-details-info-text h4 {
+   color: #fff;
+}
+.project-details .project-details-info-text p {
+   color: #fff;
+}
+
+.view-more-arrow { height: 27px; display: flex; flex-direction: row; align-items: center;
+ justify-content: flex-end; margin-right: 6rem; padding-top: -5rem;
+}
+.view-more-arrow p {
+    font-size: 20px; font-weight: 600;
+     line-height: 100%; color: rgba(243, 98, 142, 1);
+     margin-left: 10rem;
+}
+.view-more-arrow .view-more-arrow-img {
+    width: 24px; height: 24px;  
+    display: flex; flex-direction: row; align-items: flex-end; justify-content: flex-start;
+}
+.view-more-arrow .view-more-arrow-img img {
+    /* transform: rotate(180deg);  */
+    width: 12.05px; height: 100%; border-radius: 8px
+}
+.events .event-details {
+    margin: 3rem auto;
+}
+.events .event-details .event-details-info {
+    width: 1000px; height: 50px;
+     display:flex; flex-direction: row;
+      align-items: center; justify-content: center;
+      gap: 3.5rem;  margin: 3rem auto;
+      border-bottom: 1px solid gray;
+      padding: 4rem 0;
+      border-top: 1px solid gray;
+}
+.events .event-details .event-details-info  .fa-location-dot {
+    color: #F3628E;
+}
+.event-details .event-details-info p span {
+    color: #F3628E;
+}
+.event-details .event-details-info .event-details-info-location {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+.event-btn .btn {
+    width: 284px; padding-left: 32px; padding-right: 32px; padding-top: 23px; 
+    padding-bottom: 23px; background-color: rgba(243, 98, 142, 1); border-radius: 9.01px; 
+    display: flex; flex-direction: row; align-items: center; justify-content: center;
+    margin: 1.5rem auto;
+}
+.event-btn .btn a{
+    font-size: 20px; font-weight: 500; line-height: 100%; color: white;
+}
+.testimonials .testimonial-details {
+    position: relative;
+    width: 80vw;
+    min-width: 13rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+    gap: 2rem;
+}
+.testimonials .testimonial-details .testimonials-details-info {
+    width: 258px; height: 205px;padding: 1.5rem;
+  background-color:  rgba(235, 163, 179, 0.18); 
+position: relative;
+border-radius: 10px; 
+}
+.testimonials-details-info .testimonials-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+.testimonials-details-info .testimonials-img img{
+    width: 3rem;
+}
+.blog .title {
+    margin: 0 auto;
+    width: 350px; height: 66px; 
+    display: flex; flex-direction: column; 
+    align-items: center; justify-content: center;
+    padding: 5rem 0;
+}
+.blog .title h1 {
+margin-bottom: 1rem;
+}
+.blog {
+    margin-bottom: 4rem;
+}
+.blog .blog-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.blog .blog-content .blog-content-details {
+    width: 18rem;
+    background-color: #eba3b325;
+}
+.blog .blog-content .blog-content-details img {
+    width: 100%;
+}
+.blog .blog-content .blog-content-details .blog-content-info {
+    padding: 1rem;
+    padding-top: 1rem;
+} 
+.blog .blog-content .blog-content-details .blog-content-info .line{
+    height: 1px;
+    width:3rem ;
+    background-color: #F3628E;
+    margin-bottom: 1rem;
+}
+.blog .blog-content .blog-content-details .blog-content-info p {
+    font-size: .8rem;
+}
+.blog-content-details .blog-content-info .readmore {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0.7rem;
+}
+.blog-content-details .blog-content-info .readmore p {
+    color: #F3628E;
+}
+.blog .blog-content .blog-content-details .blog-content-info .heading-bold {
+    font-weight: bold;
+    padding: .4rem 0;
+}
+.blog .viewmore {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 2rem;
+    padding-right: 15%;
+}
+.blog .viewmore p {
+    color: #F3628E;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin-bottom: 2rem;
+}
+.contact img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 20rem;
+}
+.contact .contact-info {
+    position: absolute;
+}
+.contact .contact-info h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+}
+.contact .contact-info p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+}
+.contact .contact-info * {
+  padding-bottom: 1.5rem;
+}
+.contact .contact-info .btn  {
+    background-color: #FF9CBD;
+    border-radius: 9.01px; 
+    margin: 1.5rem auto;
+    padding: .8rem 2rem;
+    margin-left: 4.5rem;
+   
+}
+
+/* MEDIA QEURIES */
+@media (max-width:1200px) {
+    .navbar {
+        width: 1000px;
+       } 
+       .search-btns {
+        display: flex;
+      gap: 1.3rem;
+    }
+    .search-btns .nav-search {
+        width: 140px; height: 38px; padding: 10px 84x 9px 16px;
+    }
+    .search-btns .nav-search .fa-search{
+      padding-left: 10px;
+      padding-top: 10px;
+      background-color: rgba(217, 217, 217, 0.48); 
+      height: 100%;
+      border-radius: 10px 0 0 10px;
+      color: #fff;
+    }
+    .home-content-details {
+        width: 356px; height: 390.71px; margin-top: 20%;
+    }
+    .home-content-details p {
+        width: 300px; font-size: 16px; line-height: 128.50%; margin-bottom: 1.3rem;
+    }
+    .home-content-details .btn {
+        padding: 15px 30px 15px 30px;
+    }
+    .home-content-details .btn a{
+        color: #fff;
+    }
+    .project-volunteer-donation {
+        margin-left: 19.7rem;
+          width: 600px; padding: 17px 40px 17px 81px;
+          gap: .5rem;margin-top: 65%; 
+         
+      }
+      .project-volunteer-donation .projects {
+          gap: 1rem;
+      }
+      .project-volunteer-donation .projects P, .project-volunteer-donation .projects h2{
+         font-size: 1rem;
+      }
+      .about-details {
+        margin-top: 2rem;
+      }
+      .about-details .about-details-content  p {
+        width: 416px; text-align: justify;
+         font-size: 18px; letter-spacing: 0.18px; line-height: 28px; color: black;
+    }
+    .about-details {
+        column-gap: 4rem;flex-wrap: wrap;
+       }
+       .about-details-img {
+        width: 25vw;
+        min-width: 17rem;
+        margin-top: 2rem;
+       }
+    .about-details-img img {
+        width: 100%;
+        height: 30rem;
+        margin-top: -4rem;
+    }
+    .events .event-details .event-details-info {
+        width: 910px; height: 50px;
+          gap: 3.5rem;  
+          padding: 4rem 0;
+    }
+    .blog .blog-content .blog-content-details {
+        width: 19rem;
+        background-color: #eba3b325;
+    }
+    .contact {
+       margin-bottom: 2rem;
+    }
+    
+}
+@media (max-width:1000px) {
+    .navbar {
+        width: 100vw;
+       } 
+       .search-btns {
+        display: flex;
+      gap: 1.0rem;
+    }
+    .toggle {
+        display: block;
+        margin-right: 8rem;
+       }
+       .navbar-list {
+        display:flex;
+        position: absolute;
+        top: 100%;
+        background-color: #F3628E;
+        left: -100%;top: 0;
+        height: 100vh;
+        width: 30vw;align-items: center;justify-content: center;
+        transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+     .navbar-list ul {
+        display:flex;
+        flex-flow: column;
+        gap: 2.5rem;
+    }
+     .navbar-list ul li a{
+       color: #fff;
+    }
+    .navbar-list-show {
+      left: 0%;
+    }
+    .search-btns .nav-search {
+        width: 100px; height: 38px; padding: 10px 84x 9px 16px;
+    }
+    .search-btns .nav-search .fa-search{
+      padding-left: 10px;
+      padding-top: 10px;
+      background-color: rgba(217, 217, 217, 0.48); 
+      height: 100%;
+      border-radius: 10px 0 0 10px;
+      color: #fff;
+    }
+    .home-content-details {
+        width: 356px; height: 390.71px; margin-top: 10%;
+    }
+    .home-content-details p {
+        width: 300px; font-size: 16px; line-height: 128.50%; margin-bottom: 1.3rem;
+    }
+    .home-content-details .btn {
+        padding: 15px 30px 15px 30px;
+    }
+    .home-content-details .btn a{
+        color: #fff;
+    }
+    .project-volunteer-donation {
+        margin-left: 19.7rem;
+          width: 600px; padding: 17px 40px 17px 81px;
+          gap: .5rem;margin-top: 65%; 
+         
+      }
+      .project-volunteer-donation .projects {
+          gap: 1rem;
+      }
+      .project-volunteer-donation .projects P, .project-volunteer-donation .projects h2{
+         font-size: 1rem;
+      }
+      .project-details {
+        padding: 3rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: .8rem;
+    }
+    .project-details .project-details-info {
+        position: relative;
+        width: 275px;
+         height: 354px; 
+    }
+      .about-details {
+        margin-top: 2rem;
+      }
+      .about-details .about-details-content  p {
+        width: 350px; text-align: justify;
+         font-size: 18px; letter-spacing: 0.18px; line-height: 28px; color: black;
+    }
+    .about-details {
+        column-gap: 4rem;flex-wrap: wrap;
+       }
+       .about-details-img {
+        width: 25vw;
+        min-width: 17rem;
+        margin-top: 2rem;
+       }
+    .about-details-img img {
+        width: 100%;
+        height: 30rem;
+        margin-top: -4rem;
+    }
+    .events .event-details .event-details-info {
+        width: 700px; height: 50px;
+          gap: 3.5rem;  
+          padding: 4rem 0;
+    }
+    .blog .blog-content .blog-content-details {
+        width: 19rem;
+        background-color: #eba3b325;
+    }
+    .contact {
+       margin-bottom: 2rem;
+    }
+    
+}
+@media (max-width:768px) {
+   .navbar {
+    width: 730px;
+   } 
+   .toggle .fa-bars{
+    display: block;
+    margin-right: 9%;
+   }
+  
+.navbar-list {
+    display:flex;
+    position: absolute;
+    top: 100%;
+    background-color: #F3628E;
+    left: -100%;top: 0;
+    height: 100vh;
+    width: 30vw;align-items: center;justify-content: center;
+    transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+ .navbar-list ul {
+    display:flex;
+    flex-flow: column;
+    gap: 2.5rem;
+}
+ .navbar-list ul li a{
+   color: #fff;
+}
+.navbar-list-show {
+  left: 0%;
+}
+.search-btns .nav-search {
+   display: none;
+  
+}
+.search-btns .nav-btns {
+    width: 180px; height: 30.10px; 
+    gap: .8rem; margin-right: -14rem;
+}
+.search-btns .nav-btns .donate-btn  {
+    width: 800px;
+     height: 25.10px; 
+     padding-left: 14px; padding-right: 14px; padding-top: 10px;
+      padding-bottom: 10px; 
+}
+.search-btns .nav-btns .donate-btn a {
+    font-size: 10px; line-height: 100%; color: white;
+}
+.search-btns .nav-btns .contact-btn  {
+    width: 800px;
+    height: 25.10px; 
+    padding-left: 17px; 
+    padding-right: 17px; 
+    padding-top: 13px; 
+    padding-bottom: 13px; 
+
+}
+.search-btns .nav-btns .contact-btn a {
+    font-size: 10px; font-weight: 600; line-height: 100%; color: rgba(243, 98, 142, 1)
+}
+.home-content-details {
+    width: 356px; height: 390.71px;
+}
+.home-content-details h3 {
+    width: 200px; font-size: 20px; font-weight: 700; line-height: 143.70%; margin-bottom: 2rem;
+}
+.home-content-details p {
+    width: 250px; font-size: 14px; line-height: 128.50%; margin-bottom: 1.5rem;
+}
+.home-content-details .btn {
+    padding-left: 30px; 
+    padding-right: 30px; 
+    padding-top: 15px;
+     padding-bottom: 15px;
+
+}
+.project-volunteer-donation {
+    margin-left: 19.7rem;
+      width: 400px; padding: 17px 50px 17px 81px;
+      gap: .5rem;margin-top: 2rem; 
+     
+  }
+  .project-volunteer-donation .projects {
+      gap: 1rem;
+  }
+  .project-volunteer-donation .projects P, .project-volunteer-donation .projects h2{
+     font-size: 1rem;
+  }
+  .events .event-details .event-details-info {
+    width: 550px; height: 50px;
+      gap: 2.5rem;  margin: 3rem auto;
+      padding: 4rem 0;
+}
+}
+@media (max-width:600px) {
+    .toggle {
+        margin-right: 1rem;
+       }
+       .navbar {
+        width: 100vw;
+       }
+       .events .event-details .event-details-info {
+        width: 550px; height: 50px;
+          gap: 2.5rem;  margin: 3rem auto;
+          padding: 4rem 0;
+    }
+    .navbar-list {
+        display:flex;
+        position: absolute;
+        top: 100%;
+        background-color: #F3628E;
+        left: -100%;top: 0;
+        height: 100vh;
+        width: 30vw;align-items: center;justify-content: center;
+        transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+     .navbar-list ul {
+        display:flex;
+        flex-flow: column;
+        gap: 2.5rem;
+    }
+     .navbar-list ul li a{
+       color: #fff;
+    }
+    .navbar-list-show {
+      left: 0%;
+    }
+    .events .event-details .event-details-info {
+        width: 400px; height: 50px;
+          gap: 3.5rem;  
+          padding: 4rem 0;
+    }
+}
+@media (max-width:500px) {
+    .navbar {
+        width: 500px;
+       } 
+       .toggle {
+        margin-right: 3rem;
+       }
+    .navbar-list {
+        display:flex;
+        position: absolute;
+        top: 100%;
+        background-color: #F3628E;
+        left: -100%;top: 0;
+        height: 100vh;
+        width: 30vw;align-items: center;justify-content: center;
+        transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+     .navbar-list ul {
+        display:flex;
+        flex-flow: column;
+        gap: 2.5rem;
+    }
+     .navbar-list ul li a{
+       color: #fff;
+    }
+    .navbar-list-show {
+      left: 0%;
+    }
+    .search-btns .nav-search {
+       display: none;
+      
+    }
+    .search-btns .nav-btns {
+        width: 170px; height: 30.10px; display: flex; 
+        flex-direction: row; align-items: center; justify-content: flex-end;
+        gap: .6rem; margin-left: -6rem;
+    }
+    .search-btns .nav-btns .donate-btn  {
+        width: 700px;
+         height: 22.10px; 
+         padding-left: 14px; padding-right: 14px; padding-top: 10px;
+          padding-bottom: 10px; background-color: rgba(243, 98, 142, 1);
+         border-radius: 5px; display: flex; flex-direction: row; align-items: center; justify-content: center;
+    }
+    .search-btns .nav-btns .donate-btn a {
+        font-size: 10px; line-height: 100%; color: white;
+    }
+    .search-btns .nav-btns .contact-btn  {
+        background-color: transparent;
+        width: 700px;
+        height: 22.10px; 
+        padding-left: 17px; 
+        padding-right: 17px; 
+        padding-top: 13px; 
+        padding-bottom: 13px; 
+    
+    }
+    .search-btns .nav-btns .contact-btn a {
+        font-size: 10px; font-weight: 600; line-height: 100%; color: #fff;
+    }
+    .home-content-details {
+        width: 256px; height: 390.71px;
+    }
+    .home-content-details h3 {
+        width: 150px; font-size: 16px; font-weight: 700; line-height: 143.70%; margin-bottom: 2rem;
+    }
+    .home-content-details p {
+        width: 170px; font-size: 12px; line-height: 128.50%; margin-bottom: 1.5rem;
+    }
+    .home-content-details .btn {
+        padding-left: 40px; 
+        padding-right: 40px; 
+        padding-top: 10px;
+         padding-bottom: 10px;
+    
+    }
+    .events .event-details .event-details-info {
+        width: 450px; height: 50px;
+          gap: 2.5rem;  margin: 3rem auto;
+          padding: 4rem 0;
+    }
+    .project-volunteer-donation {
+        margin-left: 2.6rem;
+          width: 450px; padding-left: 0px; padding-right: 80px; padding-top: 17x; padding-bottom: 17px; background-color: rgba(0, 0, 0, 0.30);
+           display: flex; flex-direction: row; align-items: center; justify-content: center;gap: .5rem; z-index: 999;margin-top: 19rem; 
+           border-top-left-radius: 41px;
+      }
+      .project-volunteer-donation .projects {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: .5rem;
+      }
+      .project-volunteer-donation .projects P, .project-volunteer-donation .projects h2{
+         color: #fff;
+         font-size: .8rem;
+      }
+}
+@media (max-width:400px) {
+    .navbar {
+        width: 400px;
+       } 
+       .toggle {
+        margin-right: 1.5rem;
+       }
+    
+    .navbar-list {
+        display:flex;
+        position: absolute;
+        top: 100%;
+        background-color: #F3628E;
+        left: -100%;top: 0;
+        height: 100vh;
+        width: 30vw;align-items: center;justify-content: center;
+        transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+     .navbar-list ul {
+        display:flex;
+        flex-flow: column;
+        gap: 2.5rem;
+    }
+     .navbar-list ul li a{
+       color: #fff;
+    }
+    .navbar-list-show {
+      left: 0%;
+    }
+    .search-btns .nav-search {
+       display: none;
+      
+    }
+    .search-btns .nav-btns {
+        width: 150px; height: 30.10px; display: flex; 
+        flex-direction: row; align-items: center; justify-content: flex-end;
+        gap: .6rem; margin-left: -5rem;
+    }
+    .search-btns .nav-btns .donate-btn  {
+        width: 600px;
+         height: 22.10px; 
+         padding-left: 14px; padding-right: 14px; padding-top: 10px;
+          padding-bottom: 10px; background-color: rgba(243, 98, 142, 1);
+         border-radius: 5px; display: flex; flex-direction: row; align-items: center; justify-content: center;
+    }
+    .search-btns .nav-btns .donate-btn a {
+        font-size: 10px; line-height: 100%; color: white;
+    }
+    .search-btns .nav-btns .contact-btn  {
+        background-color: transparent;
+        width: 600px;
+        height: 22.10px; 
+        padding-left: 17px; 
+        padding-right: 17px; 
+        padding-top: 13px; 
+        padding-bottom: 13px; 
+    
+    }
+    .search-btns .nav-btns .contact-btn a {
+        font-size: 10px; font-weight: 600; line-height: 100%; color: #fff;
+    }
+    .home-content-details {
+        width: 256px; height: 390.71px;
+    }
+    .home-content-details h3 {
+        width: 150px; font-size: 16px; font-weight: 700; line-height: 143.70%; margin-bottom: 2rem;
+    }
+    .home-content-details p {
+        width: 170px; font-size: 12px; line-height: 128.50%; margin-bottom: 1.5rem;
+    }
+    .home-content-details .btn {
+        padding-left: 40px; 
+        padding-right: 40px; 
+        padding-top: 10px;
+         padding-bottom: 10px;
+    
+    }
+    .project-volunteer-donation {
+        margin-left: 2.6rem;
+          width: 350px; padding-left: 81px; padding-right: 50px; padding-top: 17x; padding-bottom: 17px; background-color: rgba(0, 0, 0, 0.30);
+           display: flex; flex-direction: row; align-items: center; justify-content: center;gap: .5rem; z-index: 999;margin-top: 7rem; 
+           border-top-left-radius: 41px;
+      }
+      .project-volunteer-donation .projects {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: .5rem;
+      }
+      .project-volunteer-donation .projects P, .project-volunteer-donation .projects h2{
+         color: #fff;
+         font-size: .8rem;
+      }
+      .about .title, 
+.project .title, .events .title, 
+.testimonials .title {
+    margin: 0 auto;
+    width: 150px; height: 46px; 
+    display: flex; flex-direction: column; 
+    align-items: center; justify-content: center;
+}
+.about .title h1, 
+.project .title h1, 
+.events .title h1,
+.testimonials .title h1{
+    font-size: 26px; font-weight: 700; line-height: 100%; color: black;text-align: center;
+}
+.about .title img, .project .title img,  .events .title img {
+    width: 196px; height: 17px; border-radius: 8px;
+}
+.about-details .about-details-content h1 {
+    font-size: 22px; font-weight: 700; line-height: 100%;
+     color: black; margin-bottom: 1rem;text-align: center;
+}
+.about-details .about-details-content  p {
+    width: 250px;
+     font-size: 18px;  text-align: justify;
+}
+.about-details .btn {
+    width: 162px; height: 37px; padding-left: 17px;
+     padding-right: 27px; padding-top: 20px; padding-bottom: 20px;
+    }
+.about-details .btn a {
+    font-size: 14px;
+}
+.project-details .project-details-info {
+    width: 275px;
+     height: 354px; 
+}
+.view-more-arrow { height: 27px; display: flex; flex-direction: row; align-items: center;
+    justify-content: flex-end;  margin: -1.5rem 3rem 3rem 0;
+   }
+   .view-more-arrow p {
+       font-size: 20px; font-weight: 600;
+        line-height: 100%; color: rgba(243, 98, 142, 1);
+        margin-left: 10rem;
+   }
+   .events .event-details {
+    justify-content: center;
+   }
+   .events .event-details .event-details-info {
+    width: 340px; height: 40px;
+     display:flex; flex-direction: row;
+      align-items: center; justify-content: center;
+      gap: 1.0rem;  margin: 3rem auto;
+      border-bottom: 1px solid gray;
+      padding: 3rem 0;
+      border-top: 1px solid gray;
+}
+.events .event-details .event-details-info p {
+    font-size: .7rem;
+}
+.event-btn .btn {
+    width: 184px; padding-left: 22px; padding-right: 22px; padding-top: 15px; 
+    padding-bottom: 15px;
+    margin: 1.2rem auto;
+}
+.event-btn .btn a{
+    font-size: 20px; font-weight: 500; line-height: 100%; color: white;
+}
+.testimonials .testimonial-details {
+    width: 50vw;
+}
+.testimonials .testimonial-details .testimonials-details-info {
+    width: 208px; height: 205px;padding: 1.5rem;
+  background-color:  rgba(235, 163, 179, 0.18); 
+position: relative;
+border-radius: 10px; 
+}
+.contact {
+    margin-bottom: 2rem;
+}
+.contact img {
+    width: 80vw;
+    height: 10rem;
+}
+.contact .contact-info h1 {
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+}
+.contact .contact-info p {
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+}
+.contact .contact-info * {
+  padding-bottom: .5rem;
+}
+.contact .contact-info .btn  {
+    background-color: #FF9CBD;
+    border-radius: 9.01px; 
+    text-align: center;
+    margin: 1.0rem auto;
+    padding: .4rem 1rem;
+    margin-left: 2rem;
+    
+   
+}
+}
+@media (max-width:300px) {
+    .navbar {
+        width: 300px;
+       } 
+       .navbar .logo {
+        width: 2rem;
+        margin-left: -1.7rem;
+    }
+       .toggle {
+        margin-right: .8rem;
+       }
+       .navbar-list {
+        display:flex;
+        position: absolute;
+        top: 100%;
+        background-color: #F3628E;
+        left: -100%;top: 0;
+        height: 100vh;
+        width: 30vw;align-items: center;justify-content: center;
+        transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+     .navbar-list ul {
+        display:flex;
+        flex-flow: column;
+        gap: 2.5rem;
+    }
+     .navbar-list ul li a{
+       color: #fff;
+    }
+    .navbar-list-show {
+      left: 0%;
+    }
+    .search-btns .nav-search {
+       display: none;
+      
+    }
+    .search-btns .nav-btns {
+        width: 90px; height: 20.10px; display: flex; 
+        flex-direction: row; align-items: center; justify-content: flex-end;
+        gap: .6rem; margin-left: -1rem;
+    }
+    .search-btns .nav-btns .donate-btn  {
+        width: 400px;
+         height: 22.10px; 
+         padding-left: 14px; padding-right: 14px; padding-top: 10px;
+          padding-bottom: 10px; background-color: rgba(243, 98, 142, 1);
+    }
+    .search-btns .nav-btns .donate-btn a {
+        font-size: 10px; line-height: 100%; color: white;
+    }
+    .search-btns .nav-btns .contact-btn  {
+        background-color: transparent;
+        width: 400px;
+        height: 22.10px; 
+        padding-left: 14px; 
+        padding-right: 14px; 
+        padding-top: 10px; 
+        padding-bottom: 10px; 
+    
+    }
+    .search-btns .nav-btns .contact-btn a {
+        font-size: 10px; font-weight: 600; line-height: 100%; color: #fff;
+    }
+    .home-content-details {
+        width: 256px; height: 390.71px;
+    }
+    .home-content-details h3 {
+        width: 150px; font-size: 16px; font-weight: 700; line-height: 143.70%; margin-bottom: 2rem;
+    }
+    .home-content-details p {
+        width: 170px; font-size: 12px; line-height: 128.50%; margin-bottom: 1.5rem;
+    }
+    .home-content-details .btn {
+        padding-left: 40px; 
+        padding-right: 40px; 
+        padding-top: 10px;
+         padding-bottom: 10px;
+    
+    }
+    .project-volunteer-donation {
+        margin-left: 2.6rem;
+          width: 270px; padding-left: 81px; padding-right: 90px; padding-top: 17x; padding-bottom: 17px; background-color: rgba(0, 0, 0, 0.30);
+           display: flex; flex-direction: row; align-items: center; justify-content: center;gap: .5rem; z-index: 999;margin-top: 5rem; 
+           border-top-left-radius: 41px;margin-left: 10px;
+      }
+      .project-volunteer-donation .projects {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: .5rem;
+      }
+      .project-volunteer-donation .projects P, .project-volunteer-donation .projects h2{
+         color: #fff;
+         font-size: .7rem;
+      }
+}
